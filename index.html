@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Face Recognition</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    </head>
+    <body style="background-color: rgb(137, 235, 197);">
+        <div class="container">
+            <center>
+                <h2>Face Recognition</h2>
+                <br>
+
+                <b>
+                    Me(miguel)
+                    <hr>
+                    My dad
+                    <hr>
+                    My mom
+                    <hr>
+                </b>
+                <br>
+                <div id="webcam_div">
+                    <h4>Webcam will be here-</h4>
+                    <div class="webcam"></div>
+                    <br>
+                    <button class="btn btn-info" onclick="takeImage()">Take Image</button>
+                </div>
+                <div id="image_div">
+                    <h4>Captured image will be here-</h4>
+                    <div class="image"></div>
+                    <br>
+                    <button class="btn btn-success" onclick="check()">Check Image</button>
+                </div>
+                <br>
+                <p style="font-size: 22px;">Family member: <span id="family_member"></span> </p>
+                <p style="font-size: 22px;">Accuracy: <span id="accuracy"></span> </p>
+            </center>
+        </div>
+        <script src="main.js"></script>
+        <script src="webcam.js"></script>
+    </body>
+</html>
